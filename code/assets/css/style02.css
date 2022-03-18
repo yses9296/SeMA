@@ -7,14 +7,11 @@ a {text-decoration: none; color: #333;}
 /*layout*/
 #wrap {width: 100%; height: 100%;}
 #header {width: 100%; height: 50px; background: #888;}
-#aside {width: 15%;  background: #777; float: left;}
-        /*height: 1445px;*/
-#container {width: 85%; height: auto; background: #666; float: left; overflow: hidden;}
-#container01 {padding: 2em 2em 0; background: #000;}
-#container02 {padding: 0 2em 2em; background: #fff;}
+#aside {width: 15%; height: 1400px; background: #777; float: left;}
 
+/*#container {width: 85%; height: auto; background: #666; float: left; padding: 2em;}*/
 #banner {width: 100%; height: auto; background: #555; padding-bottom: 2em;}
-#content01 { height: auto; background: #444; padding: 2em 0; overflow: hidden;}
+#content01 { height: auto; background: #444; padding: 2em 0;}
 #content02 {width: 100%; height: auto; background: #fff; padding: 2em 0;}
 #content03 {width: 100%; height: auto; background: #fff; padding: 1em 0;}
 
@@ -22,10 +19,13 @@ a {text-decoration: none; color: #333;}
 #foot_menu {width: 100%; height: 400px; background: #888; float: left;}
 #foot_address {width: 100%; height: 300px; background: #999; float: left;}
 
+#aside {position: relative;}
+#container {position: absolute; width: auto; height: auto; display: inline-block;}
+
 /*header*/
 
 /*aside*/
-#aside {padding: 2em 1em; background: #000;}
+#aside {padding: 10px 16px; background: #000;}
 .side_logo {display: flex; align-items: center; justify-content: center; padding: 20px;}
 .side_logo img {display: block; width: 100%;}
 
@@ -40,20 +40,17 @@ a {text-decoration: none; color: #333;}
 #container h2 {padding: 10px 0; font-size: 32px; }
 #banner video {width: 100%;}
 
-/*content1*/
-.content01_wrap {}  /*position: relative;*/
-.chart {overflow: hidden;}  /* width: 1600px;*/
-.chart > div > div > div {float: left; margin-right: 2em;}
-/*
-.swiper-container {}
-.chart_cont {}
-.swiper_slide {float: left; margin-right: 2em;}*/
 
+/*content1*/
+.container01 {width: 2000px; position: relative;}
+.chart {overflow: hidden; width: 1600px;}
+.chart > div > div > div {float: left; width: 300px;}
+.swiper_cont {margin-right: 2em;}
 
 .poster {position: relative; margin-bottom: 10px;}
-.poster img {display: block;} /* width: 100%;*/
-
+.poster img {display: block;  width: 100%;}
 .info {margin-bottom: 1em;}
+
 .info_cont {display: inline-block;}
 .info_cont p {display: inline-block; width: 100px; padding: 5px 10px; text-align: center; font-weight: bold;}
 .info_cont p:first-child {width: 90px; background: #333; margin-right: 10px;}
