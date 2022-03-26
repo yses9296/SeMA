@@ -29,6 +29,51 @@ $(document).ready(function (){
     });
 });
 
+//notice
+var currentIndex = 0;
+var position;
+
+setInterval(function(){
+    if (currentIndex < 2){
+        currentIndex++;
+    }
+    else {
+        currentIndex = 0;
+    }
+    position = currentIndex * (-50)+"px";
+    $(".notice > ul").animate({top: position},300);
+},3000);
+
+
+
+//knowledge section
+$(".knowledge_img").find("img:gt(0)").hide();
+
+var length = $(".knowledge_img > img").length;
+var current = 0;
+
+setInterval(function(){
+    var next = (current + 1) % length;
+    
+    $(".knowledge_img").find("img").eq(current).fadeOut('slow');
+    $(".knowledge_img").find("img").eq(next).fadeIn('slow');
+    
+    current = next;
+        console.log(current);
+        console.log(next);
+}, 5000);
+
+
+
+
+
+
+
+
+
+
+
+
 //var height01 = $("#banner").height();
 //var height02 = $("#se").height();
 //var totalHeight = height01 + height02 + 50;

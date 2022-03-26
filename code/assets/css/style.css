@@ -3,11 +3,12 @@
 .clearfix::before, clearfix::after {display: block; content: ''; clear: both;}
 li {list-style: none;}
 a {text-decoration: none; color: #333;}
+body {font-family: 'Nanum Gothic'}
 
 /*layout*/
 #wrap {width: 100%; height: 100%;}
 #header {width: 100%; height: 50px; background: #888;}
-#aside {width: 15%; height: 1427px; background: #777; float: left;}
+#aside {width: 15%; height: 1413px; background: #777; float: left;}
         /*height: 1445px;*/
 #container {width: 85%; height: auto; background: #666; float: left; overflow: hidden;}
 #container01 {padding: 2em 2em 0; background: #000;}
@@ -33,7 +34,7 @@ a {text-decoration: none; color: #333;}
         /*display: flex; justify-content: space-between;*/
 .sidemenu ul.mainmenu {}
 .sidemenu ul.mainmenu li {width: 100%;}
-.sidemenu ul.mainmenu li a {display: block; padding: 5px; width: 100%; color: #fff; font-size: 24px; font-weight: bold;}
+.sidemenu ul.mainmenu li a {display: block; padding: 10px; width: 100%; color: #fff; font-size: 24px; font-weight: bold;}
 .sidemenu ul.mainmenu li a:hover {background: rgba(255,255,255,0.3);}
 
 /*container*/
@@ -57,29 +58,33 @@ a {text-decoration: none; color: #333;}
 .info_cont p:last-child {width: 110px; background: #fff; color: #111;}
 
 .info h3 {padding: 10px 0; width: 250px; font-size: 16px;}
-.info h3 a {color: #fff;}
+.info h3 a {color: #fff; display: block;}
 .info span {color: #999;}
 
 /*content2*/
 #content02 {}
 #content02 h2 {color: #000;}
 .notice {width: auto; height: 60px; margin: 10px 0; border: 1px solid #dbdbdb; padding: 5px; box-sizing: border-box; overflow: hidden;}
-.notice img {width: 50px; height: 50px; display: none;}
-.notice ul li { padding: 5px;}
-.notice ul li a {color: #000; font-size: 28px;}
-.notice ul li span {float: right; font-size: 16px; padding: 7px 0 0; color: #333;}
-
+.notice > span {width: 60px; height: 50px; float: left; display: flex; align-items: center; justify-content: center;}
+.notice > span > img {width: 30px; height: 30px; }
+.notice ul {margin-left: 50px; position: relative; }
+.notice ul li {height: 50px; padding-left: 20px;}
+.notice ul li a {color: #000; font-size: 28px; line-height: 50px;}
+.notice ul li span {float: right; font-size: 16px;  color: #333; margin-top: 15px; margin-right: 10px;}
+                                            /*display: flex; align-items: center; */
 /*content3*/
 #content03 h2 {color: #000;}
 #content03 h4 {padding: 10px 0; font-size: 20px; font-weight: 300; color: #000;}
 
 .knowledge_container {width: 100%; height: 400px;}
-.knowledge_img {width: 44%; height: 100%; background: #222; float: left; display: flex; align-content: center; justify-content: center; padding: 20px 10px;}
-.knowledge_img img {display: block; width: 100%;}
+.knowledge_img {width: 44%; height: 100%; background: #222; 
+    float: left; display: flex; align-content: center; justify-content: center; position: relative;
+}
+.knowledge_img img {display: block; position: absolute;}
 
-.knowledge_list {width: 54%; height: 100%; float: left; margin-left: 2%;}
+.knowledge_list {width: 54%; height: 100%; float: left; margin-left: 2%; display: flex; align-items: center;}
 .knowledge_list ul li {font-size: 30px; font-weight: 600; color: #000;}
 .knowledge_list ul li span {float: right;}
-.knowledge_list ul p {padding: 10px 0; font-size: 20px; font-weight: 600; color: #333;}
+.knowledge_list ul p {padding: 10px 0; font-size: 20px; font-weight: 300; color: #333;}
 
 /*footer*/

@@ -1,0 +1,28 @@
+/*reset*/
+* {margin: 0; padding: 0; color: #fff; box-sizing: border-box;}
+.clearfix::before, clearfix::after {display: block; content: ''; clear: both;}
+li {list-style: none;}
+a {text-decoration: none; color: #333;}
+
+/*font*/
+@font-face {
+    font-family: 'NEXONLv1Gothic';
+    font-weight: 300; 
+    font-style: normal; 
+    src: url(https://cdn.jsdelivr.net/gh/webfontworld/NEXONGothic/NEXONLv1GothicLowOTFLight.woff) format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'NEXONLv1Gothic';
+    font-weight: 400; 
+    font-style: normal; 
+    src: url(https://cdn.jsdelivr.net/gh/webfontworld/NEXONGothic/NEXONLv1GothicOTF.woff) format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'NEXONLv1Gothic';
+    font-weight: 700; 
+    font-style: normal; 
+    src: url(https://cdn.jsdelivr.net/gh/webfontworld/NEXONGothic/NEXONLv1GothicOTFBold.woff) format('woff');
+    font-display: swap;
+}
