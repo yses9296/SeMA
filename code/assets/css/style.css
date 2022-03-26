@@ -15,13 +15,9 @@ body {font-family: 'Nanum Gothic'}
 #container02 {padding: 0 2em 2em; background: #fff;}
 
 #banner {width: 100%; height: auto; padding-bottom: 2em;}
-#content01 { height: auto; padding: 2em 0;}
-#content02 {width: 100%; height: auto; background: #fff; padding: 2em 0;}
-#content03 {width: 100%; height: auto; background: #fff; padding: 1em 0;}
-
-#footer {width: 100%; height: auto; }
-#foot_menu {width: 100%; height: 400px; background: #888; float: left;}
-#foot_address {width: 100%; height: 300px; background: #999; float: left;}
+#content01 { height: auto; padding: 2em 0; border-bottom: 1px solid #dbdbdb; box-sizing: border-box;}
+#content02 {width: 100%; height: auto; background: #fff; padding: 2em 0; border-bottom: 1px solid #dbdbdb; box-sizing: border-box;}
+#content03 {width: 100%; height: auto; background: #fff; padding: 2em 0;}
 
 /*header*/
 
@@ -87,4 +83,42 @@ body {font-family: 'Nanum Gothic'}
 .knowledge_list ul li span {float: right;}
 .knowledge_list ul p {padding: 10px 0; font-size: 20px; font-weight: 300; color: #333;}
 
+
 /*footer*/
+#footer {width: 100%; height: auto; }
+#foot_menu {width: 100%; height: 400px; float: left; padding: 2em 0; border-top: 1px solid #dbdbdb; box-sizing: border-box;}
+#foot_address {width: 100%; height: 300px; float: left; padding: 2em 0 0; border-top: 1px solid #dbdbdb; box-sizing: border-box;}
+
+
+.foot_main_menu {}
+.foot_main_menu > li {float: left; width: 12%; margin: 0 1%;}
+.foot_main_menu > li:first-child {margin-left: 2%;}
+.foot_main_menu > li:last-child {margin-right: 2%;}
+.foot_main_menu > li a {display: block; color: #111; font-size: 26px; font-weight: bold; text-align: center; padding: 10px 0;}
+
+.foot_main_menu li ul.foot_sub_menu {}
+.foot_main_menu li ul.foot_sub_menu li {width: 100%;}
+.foot_main_menu li ul.foot_sub_menu li a {display: block; color: #333; font-size: 18px; font-weight: 400; text-align: center; padding: 8px 0; word-break: keep-all;}
+
+.foot_left {float: left;}
+.foot_right {float: right;}
+
+/*Foot Left*/
+.foot_sns {float: left; width: 200px;  height: auto; margin-left: 2em;}
+.foot_sns ul {width: 100%; height: 30px;}
+.foot_sns ul li {float: left; width: 15%; margin-right: 2%;}
+.foot_sns ul li:last-child {margin-right: 0;}
+.foot_sns ul li a {display: block;}
+.foot_sns ul li img {display: block; width: 100%;}
+.foot_sns .foot_desc address {width: 100%; font-style: normal; font-weight: 600; color: #333; margin-top: 1em;}
+
+.foot1 {float: left; width: 200px; height: auto;  margin-left: 6em;}
+.foot1 ul li {}
+.foot1 ul li a {display: block; font-weight: bold; padding: 6px 0;}
+
+/*Foot Right*/
+.foot2 {float: left; margin-right: 6em;}
+.foot2 ul li a {display: block; font-weight: bold; padding: 6px 0;}
+
+.foot_logo {float: left; width: 200px; margin-right: 2em;}
+.foot_logo img {display: block; width: 100%;}
