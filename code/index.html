@@ -48,7 +48,7 @@
                     <div class="chart">
                       <div class="swiper-container">
                            <div class="chart_cont swiper-wrapper">
-                                <div class="swiper_slide">
+                                <div class="swiper-slide">
                                     <div class="poster"> 
                                         <figure>
                                             <a href="#">
@@ -68,8 +68,8 @@
                                         <h3><a href="#">영원한 나르시시스트, 천경자</a></h3>
                                         <span>2021-11-30 ~ 2022-02-27</span>
                                     </div>
-                            </div>
-                                <div class="swiper_slide">
+                                </div>
+                                <div class="swiper-slide">
                                     <div class="poster"> 
                                         <figure>
                                             <a href="#">
@@ -90,7 +90,7 @@
                                         <span>2021-11-30 ~ 2022-02-27</span>
                                     </div>
                                 </div>
-                                <div class="swiper_slide">
+                                <div class="swiper-slide">
                                     <div class="poster"> 
                                         <figure>
                                             <a href="#">
@@ -111,7 +111,7 @@
                                         <span>2021-11-30 ~ 2022-02-27</span>
                                     </div>
                                 </div>
-                                <div class="swiper_slide">
+                                <div class="swiper-slide">
                                     <div class="poster"> 
                                         <figure>
                                             <a href="#">
@@ -133,7 +133,7 @@
                                     </div>
                                     
                                 </div>
-                                <div class="swiper_slide">
+                                <div class="swiper-slide">
                                     <div class="poster"> 
                                         <figure>
                                             <a href="#">
@@ -145,12 +145,12 @@
                                         <div class="info_cont">
                                            <p>전시</p>
                                            <p>서소문본관</p>
+                                        </div>
                                         <h3><a href="#">먼길-이야기</a></h3>
                                         <span>2021-11-30 ~ 2022-02-27</span>
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="swiper_slide">
+                                <div class="swiper-slide">
                                     <div class="poster"> 
                                         <figure>
                                             <a href="#">
@@ -162,12 +162,13 @@
                                         <div class="info_cont">
                                            <p>전시</p>
                                            <p>서소문본관</p>
+                                       </div>
                                         <h3><a href="#">빛</a></h3>
                                         <span>2021-11-30 ~ 2022-02-27</span>
-                                        </div>
                                     </div>
+                                   
                                 </div>
-                                <div class="swiper_slide">
+                                <div class="swiper-slide">
                                     <div class="poster"> 
                                         <figure>
                                             <a href="#">
@@ -179,9 +180,10 @@
                                         <div class="info_cont">
                                            <p>전시</p>
                                            <p>서소문본관</p>
+                                       </div>
                                         <h3><a href="#">자연스러운 인간</a></h3>
                                         <span>2021-11-30 ~ 2022-02-27</span>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -251,5 +253,35 @@
     <script src="assets/script/swiper.min.js"></script> 
 
     <script src="assets/script/custom.js"></script>
+<!--
+    <script>
+    const swiper = new Swiper('.swiper-container', { 
+        //기본 셋팅 
+        //방향 셋팅 vertical 수직, horizontal 수평 설정이 없으면 수평 
+        direction: 'horizontal', //한번에 보여지는 페이지 숫자 
+        slidesPerView: 3, //페이지와 페이지 사이의 간격 
+        spaceBetween: 30, //드레그 기능 true 사용가능 false 사용불가 
+        debugger: true, //마우스 휠기능 true 사용가능 false 사용불가 
+        mousewheel: true, //반복 기능 true 사용가능 false 사용불가 
+        loop: true, //선택된 슬라이드를 중심으로 true 사용가능 false 사용불가 djqt 
+        centeredSlides: true, // 페이지 전환효과 slidesPerView효과와 같이 사용 불가 
+        // effect: 'fade', //자동 스크를링 
+        autoplay: { //시간 1000 이 1초 
+            delay: 2500, 
+            disableOnInteraction: false, 
+        }, 
+      //페이징 
+        pagination: { 
+            //페이지 기능 
+            el: '.swiper-pagination', //클릭 가능여부 
+            clickable: true, 
+        }, 
+      //방향표 
+        navigation: { //다음페이지 설정 
+        nextEl: '.swiper-button-next', //이전페이지 설정 
+        prevEl: '.swiper-button-prev', }, });
+
+    </script>
+-->
 </body>
 </html>

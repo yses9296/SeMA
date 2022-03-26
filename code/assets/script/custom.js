@@ -1,6 +1,6 @@
 //Swiper
 $(document).ready(function (){    
-    var mySwiper = new Swiper('.swiper-container',{
+    var mySwiper = new Swiper('.swiper-container', {
         slidesPerView: 5,
         spaceBetween: 25,
         keyboard: {
@@ -33,11 +33,12 @@ $(document).ready(function (){
 //var height02 = $("#se").height();
 //var totalHeight = height01 + height02 + 50;
 
-var height = $("#container01").height();
+//var height = $("#container01").height();
+//
+//$("#aside").css("height", height);
+////$("#aside").css("padding-bottom", 2+"em");
+//console.log(height);
 
-$("#aside").css("height", height);
-//$("#aside").css("padding-bottom", 2+"em");
-console.log(height);
 
 //var total = $("#aside").height();
 //console.log(height01);

@@ -7,14 +7,14 @@ a {text-decoration: none; color: #333;}
 /*layout*/
 #wrap {width: 100%; height: 100%;}
 #header {width: 100%; height: 50px; background: #888;}
-#aside {width: 15%;  background: #777; float: left;}
+#aside {width: 15%; height: 1427px; background: #777; float: left;}
         /*height: 1445px;*/
 #container {width: 85%; height: auto; background: #666; float: left; overflow: hidden;}
 #container01 {padding: 2em 2em 0; background: #000;}
 #container02 {padding: 0 2em 2em; background: #fff;}
 
-#banner {width: 100%; height: auto; background: #555; padding-bottom: 2em;}
-#content01 { height: auto; background: #444; padding: 2em 0; overflow: hidden;}
+#banner {width: 100%; height: auto; padding-bottom: 2em;}
+#content01 { height: auto; padding: 2em 0;}
 #content02 {width: 100%; height: auto; background: #fff; padding: 2em 0;}
 #content03 {width: 100%; height: auto; background: #fff; padding: 1em 0;}
 
@@ -42,13 +42,10 @@ a {text-decoration: none; color: #333;}
 
 /*content1*/
 .content01_wrap {}  /*position: relative;*/
-.chart {overflow: hidden;}  /* width: 1600px;*/
-.chart > div > div > div {float: left; margin-right: 2em;}
-/*
-.swiper-container {}
-.chart_cont {}
-.swiper_slide {float: left; margin-right: 2em;}*/
-
+.chart {} /* width: 1600px;*/
+.chart > div { width: 100%;}
+.chart > div > div {}
+.chart > div > div > div {margin-right: 2em;}
 
 .poster {position: relative; margin-bottom: 10px;}
 .poster img {display: block;} /* width: 100%;*/
