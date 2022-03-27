@@ -1,5 +1,5 @@
-//Swiper
 $(document).ready(function (){    
+    //Swiper
     var mySwiper = new Swiper('.swiper-container', {
         slidesPerView: 5,
         spaceBetween: 25,
@@ -13,15 +13,23 @@ $(document).ready(function (){
             disableOnInteraction : false,
         },
         breakpoints: {
-            600: {
-                slidesPerView: 1.4,
+//            600: {
+//                slidesPerView: 1.4,
+//                spaceBetween: 24
+//            },
+//            768: {
+//                slidesPerView: 2,
+//                spaceBetween: 24
+//            },
+//            960: {
+//                slidesPerView: 3,
+//                spaceBetween: 24
+//            },
+            1540: {
+                slidesPerView: 4,
                 spaceBetween: 24
             },
-            768: {
-                slidesPerView: 2,
-                spaceBetween: 24
-            },
-            960: {
+            1250: {
                 slidesPerView: 3,
                 spaceBetween: 24
             }
@@ -59,52 +67,6 @@ setInterval(function(){
     $(".knowledge_img").find("img").eq(next).fadeIn('slow');
     
     current = next;
-        console.log(current);
-        console.log(next);
 }, 5000);
 
 
-
-
-
-
-
-
-
-
-
-
-//var height01 = $("#banner").height();
-//var height02 = $("#se").height();
-//var totalHeight = height01 + height02 + 50;
-
-//var height = $("#container01").height();
-//
-//$("#aside").css("height", height);
-////$("#aside").css("padding-bottom", 2+"em");
-//console.log(height);
-
-
-//var total = $("#aside").height();
-//console.log(height01);
-//console.log(height02);
-//console.log(total);
-
-//
-//var swiper = new Swier ('.swiper-container', {
-//    slidesPerView : 'auto',
-//    spaceBetween : 20,
-//});
-//
-//var slideSetting = {
-//    slidesPerView : 'auto',
-//    spaceBetween : 20,
-//    loop : false,
-//    loopAdditionalSlides : 1,
-//    autoplay : {
-//        delay : 3000,  
-//        disableOnInteraction : false, 
-//    }
-//};
-//
-//var slide = new Swiper('.swiper-container', slideSetting);

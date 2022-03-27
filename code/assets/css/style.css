@@ -8,25 +8,26 @@ body {font-family: 'Nanum Gothic'}
 /*layout*/
 #wrap {width: 100%; height: 100%;}
 #header {width: 100%; height: 50px; background: #888;}
-#aside {width: 15%; height: 1413px; background: #777; float: left;}
-        /*height: 1445px;*/
-#container {width: 85%; height: auto; background: #666; float: left; overflow: hidden;}
-#container01 {padding: 2em 2em 0; background: #000;}
+
+#upPage {width: 100%; height: auto; background: #000; float: left;}
+#aside {width: 15%; float: left;}
+#container {width: 85%; height: auto; float: right; overflow: hidden;}
+#container01 {padding: 2em 2em 0; background: #000; width: 85%;  float: left;}
 #container02 {padding: 0 2em 2em; background: #fff;}
 
-#banner {width: 100%; height: auto; padding-bottom: 2em;}
-#content01 { height: auto; padding: 2em 0; border-bottom: 1px solid #dbdbdb; box-sizing: border-box;}
+#banner {width: 100%; padding-bottom: 2em;}
+#content01 { padding: 2em 0; border-bottom: 1px solid #dbdbdb; box-sizing: border-box;} 
 #content02 {width: 100%; height: auto; background: #fff; padding: 2em 0; border-bottom: 1px solid #dbdbdb; box-sizing: border-box;}
 #content03 {width: 100%; height: auto; background: #fff; padding: 2em 0;}
 
 /*header*/
 
 /*aside*/
-#aside {padding: 2em 1em; background: #000;}
-.side_logo {display: flex; align-items: center; justify-content: center; padding: 20px;}
+#aside {background: #000;}
+.side_logo {display: flex; align-items: center; justify-content: center; padding: 20px; margin-top: 2em;}
 .side_logo img {display: block; width: 100%;}
 
-.sidemenu {margin-top: 2em; padding: 20px 0; } 
+.sidemenu {margin-top: 2em; margin-left: 1em; padding: 20px 0; } 
         /*display: flex; justify-content: space-between;*/
 .sidemenu ul.mainmenu {}
 .sidemenu ul.mainmenu li {width: 100%;}
@@ -39,6 +40,7 @@ body {font-family: 'Nanum Gothic'}
 
 /*content1*/
 .content01_wrap {}  /*position: relative;*/
+.cont_title {padding: 10px 0;}
 .chart {} /* width: 1600px;*/
 .chart > div { width: 100%;}
 .chart > div > div {}
@@ -76,19 +78,17 @@ body {font-family: 'Nanum Gothic'}
 .knowledge_img {width: 44%; height: 100%; background: #222; 
     float: left; display: flex; align-content: center; justify-content: center; position: relative;
 }
-.knowledge_img img {display: block; position: absolute;}
+.knowledge_img img {display: block; position: absolute; height: 100%;}
 
 .knowledge_list {width: 54%; height: 100%; float: left; margin-left: 2%; display: flex; align-items: center;}
 .knowledge_list ul li {font-size: 30px; font-weight: 600; color: #000;}
 .knowledge_list ul li span {float: right;}
 .knowledge_list ul p {padding: 10px 0; font-size: 20px; font-weight: 300; color: #333;}
 
-
 /*footer*/
 #footer {width: 100%; height: auto; }
-#foot_menu {width: 100%; height: 400px; float: left; padding: 2em 0; border-top: 1px solid #dbdbdb; box-sizing: border-box;}
-#foot_address {width: 100%; height: 300px; float: left; padding: 2em 0 0; border-top: 1px solid #dbdbdb; box-sizing: border-box;}
-
+#foot_menu {width: 100%; float: left; padding: 5em 0; border-top: 1px solid #dbdbdb; box-sizing: border-box;}
+#foot_address {width: 100%;  float: left; padding: 3em 0 2em; border-top: 1px solid #dbdbdb; box-sizing: border-box;}
 
 .foot_main_menu {}
 .foot_main_menu > li {float: left; width: 12%; margin: 0 1%;}
@@ -100,25 +100,96 @@ body {font-family: 'Nanum Gothic'}
 .foot_main_menu li ul.foot_sub_menu li {width: 100%;}
 .foot_main_menu li ul.foot_sub_menu li a {display: block; color: #333; font-size: 18px; font-weight: 400; text-align: center; padding: 8px 0; word-break: keep-all;}
 
-.foot_left {float: left;}
-.foot_right {float: right;}
+.foot_left {float: left; width: 50%;}
+.foot_right {float: right; width: 35%;}
 
 /*Foot Left*/
-.foot_sns {float: left; width: 200px;  height: auto; margin-left: 2em;}
-.foot_sns ul {width: 100%; height: 30px;}
-.foot_sns ul li {float: left; width: 15%; margin-right: 2%;}
+.foot_sns {float: left; height: auto; margin-left: 2em;}
+.foot_sns ul {height: 30px;}
+.foot_sns ul li {float: left; width: 15%; height: 30px; margin-right: 2%;}
 .foot_sns ul li:last-child {margin-right: 0;}
 .foot_sns ul li a {display: block;}
 .foot_sns ul li img {display: block; width: 100%;}
-.foot_sns .foot_desc address {width: 100%; font-style: normal; font-weight: 600; color: #333; margin-top: 1em;}
+.foot_sns .foot_desc address {width: 100%; font-style: normal; font-weight: 600; color: #333; margin-top: 1em; display: block;}
 
-.foot1 {float: left; width: 200px; height: auto;  margin-left: 6em;}
+.foot1 {float: left; width: 40%; height: auto;  margin-left: 6em;}
 .foot1 ul li {}
 .foot1 ul li a {display: block; font-weight: bold; padding: 6px 0;}
 
 /*Foot Right*/
-.foot2 {float: left; margin-right: 6em;}
+.foot2 {float: left; width: 30%; }
+/*margin-right: 6em;*/
 .foot2 ul li a {display: block; font-weight: bold; padding: 6px 0;}
 
-.foot_logo {float: left; width: 200px; margin-right: 2em;}
+.foot_logo {float: right; width: 50%; margin-right: 2em;}
 .foot_logo img {display: block; width: 100%;}
+
+/*media*/
+@media (max-width: 1540px){
+    .sidemenu ul.mainmenu li a {font-size: 22px;}
+    .foot_main_menu > li a {font-size: 22px;}
+    .foot_main_menu li ul.foot_sub_menu li a {font-size: 16px;}
+}
+@media (max-width: 1370px){
+    .sidemenu ul.mainmenu li a {font-size: 20px;}
+    #container h2.cont_title {font-size: 24px;}
+    .notice {height: 50px;}
+    .notice > span {width: 50px; height: 40px;}
+    .notice > span > img {width: 25px; height: 25px; }
+    .notice ul li a  {font-size: 20px; line-height: 40px;}
+    .notice ul li span {font-size: 14px; margin-top: 10px;}
+    
+    .knowledge_container {}
+    .knowledge_img {width: 50%;}
+    .knowledge_list {width: 46%; margin-left: 4%;}
+    .knowledge_list ul li {font-size: 26px;}
+    .knowledge_list ul p  {font-size: 18px;}
+}
+
+@media (max-width: 1310px){
+
+    .sidemenu {}
+    .sidemenu ul.mainmenu li a {font-size: 18px; padding: 10px 0;}
+    .info_cont {}
+    .info_cont p {width: 80px; font-size: 14px;}
+    .info_cont p:first-child {width: 70px; }
+    .info_cont p:last-child {width: 100px;}
+    .info h3 {font-size: 16px;}
+    .info span {font-size: 13px;}
+    
+    .knowledge_container{height: 350px;}
+    .knowledge_list ul li {font-size: 20px;}
+    .knowledge_list ul p  {font-size: 16px;}
+        
+    .foot_main_menu > li a {font-size: 20px;}
+    .foot_main_menu li ul.foot_sub_menu li a {font-size: 14px;}
+    .foot_logo {width: 45%;}
+    .foot1 ul li a {font-size: 14px;}
+    .foot2 ul li a {font-size: 14px;}
+    address {font-size: 14px;}
+}
+
+@media (max-width: 1160px){
+    #content03 h4 {font-size: 18px;}
+    .knowledge_container {height: 330px;}
+    .knowledge_list ul li {font-size: 20px;}
+    .knowledge_list ul p  {font-size: 15px;}
+    
+    .foot_main_menu > li a {font-size: 18px;}
+    
+    .foot_sns ul, .foot_sns ul li {height: 20px;}
+    .foot1 {margin-left: 3em;}
+    .foot_sns ul li {width: 10%;}
+    .foot1 ul li a {font-size: 12px;}
+    .foot2 ul li a {font-size: 12px;}
+    .foot_logo {width: 40%;}
+    address {font-size: 12px;}
+}
+@media (max-width: 1054px){
+    .knowledge_img img {width: 100%; height: auto;}
+    .sidemenu ul.mainmenu li a {font-size: 16px;}
+    .foot_main_menu > li a {font-size: 16px;}
+}
+@media (max-width: 946px){
+    .sidemenu ul.mainmenu li a {font-size: 14px;}
+}
