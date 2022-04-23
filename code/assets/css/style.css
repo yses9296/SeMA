@@ -3,11 +3,13 @@
 .clearfix::before, clearfix::after {display: block; content: ''; clear: both;}
 li {list-style: none;}
 a {text-decoration: none; color: #333;}
+button {color: #333; background: none; border: none;}
 body {font-family: 'Nanum Gothic'}
+
 
 /*layout*/
 #wrap {width: 100%; height: 100%;}
-#header {width: 100%; height: 50px; background: #888;}
+#header {width: 100%; height: 50px; background: #000; border-bottom: 0.5px solid #333;}
 
 #upPage {width: 100%; height: auto; background: #000; float: left;}
 #aside {width: 15%; float: left;}
@@ -21,6 +23,44 @@ body {font-family: 'Nanum Gothic'}
 #content03 {width: 100%; height: auto; background: #fff; padding: 2em 0;}
 
 /*header*/
+.left_header {width: 60%; height: 100%; float: left;}
+.left_header > div {
+    display: flex;
+    align-items: center;
+}
+
+.left_left_head {
+    width: 20%; height: 100%;
+    float: left;
+    justify-content: center;
+}
+.seoul { 
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    background-image: url(https://sema.seoul.go.kr/resources/assets/svg/seoul-logo-white.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.left_right_head {
+    width: 60%; height: 100%; 
+    float: right;
+}
+.left_right_head ul li {float: left;}
+.left_right_head ul li a {display: block; color: #888; padding: 0 1em; font-size: .8em;}
+.left_right_head ul li a:hover {color: #dbdbdb;}
+
+/*right_header*/
+.right_header {
+    width: 30%; height: 100%; 
+    float: right;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.right_header button {font-size: 1.1em; font-weight: bold; padding: 5px 10px; color: #fff;}
+.right_header .seaechbar {width: 60%; height: 60%; color: #dbdbdb; padding: 0 .5em; margin-left: 3%;}
 
 /*aside*/
 #aside {background: #000;}
@@ -126,11 +166,16 @@ body {font-family: 'Nanum Gothic'}
 
 /*media*/
 @media (max-width: 1540px){
+    .right_header button {font-size: 1em;}
+    
     .sidemenu ul.mainmenu li a {font-size: 22px;}
+    
     .foot_main_menu > li a {font-size: 22px;}
     .foot_main_menu li ul.foot_sub_menu li a {font-size: 16px;}
 }
 @media (max-width: 1370px){
+    .right_header button {font-size: .9em;}
+    
     .sidemenu ul.mainmenu li a {font-size: 20px;}
     #container h2.cont_title {font-size: 24px;}
     .notice {height: 50px;}
@@ -147,7 +192,9 @@ body {font-family: 'Nanum Gothic'}
 }
 
 @media (max-width: 1310px){
-
+    .right_header {width: 35%;}
+    .right_header button {font-size: .9em;}
+    
     .sidemenu {}
     .sidemenu ul.mainmenu li a {font-size: 18px; padding: 10px 0;}
     .info_cont {}
@@ -170,6 +217,8 @@ body {font-family: 'Nanum Gothic'}
 }
 
 @media (max-width: 1160px){
+    .right_header button {font-size: .7em;}
+    
     #content03 h4 {font-size: 18px;}
     .knowledge_container {height: 330px;}
     .knowledge_list ul li {font-size: 20px;}
